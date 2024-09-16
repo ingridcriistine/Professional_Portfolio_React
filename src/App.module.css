@@ -1,8 +1,18 @@
+.littleTitle {
+    font-size: 15px;
+    color: #894bdb;
+}
+
+.sectionTitle {
+    font-size: 28px;
+}
+
+/*-------------------------------------------- Home ------------------------------------------------*/
 .home {
     display: flex;
     justify-content: space-between;
-    margin-top: 12%;
-    height: 80vh;
+    margin-top: 18%;
+    height: 60vh;
 }
 
 .boxHome {
@@ -80,4 +90,300 @@ h5 {
 
 .homeIcons img:hover {
     opacity: 0.8;
+}
+
+/*-------------------------------------------- About me ------------------------------------------------*/
+.aboutMe {
+    margin-top: 130px;
+}
+
+.whoAmI {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgsAbout {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.imgLeft {
+    margin: 0px 200px 0px 100px;
+    width: 25%;
+    border-radius: 100%;
+}
+
+.imgRight {
+    margin: 0px 200px 0px 300px;  
+    width: 25%;
+    border-radius: 100%;
+}
+
+.boxAbout {
+    width: 50%;
+}
+
+.sectionText {
+    margin-top: 40px;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+.sectionFooter {
+    display: flex;
+}
+
+.sectionFooterText {
+    display: flex;
+    margin-top: 15px;
+}
+
+.itemFooter {
+    margin: 80px 50px 50px 0px;
+    font-size: 13px;
+}
+
+.academicFormations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.containerFormations {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.boxFormation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.boxFormation img {
+    width: 80%;
+    border-radius: 100%;
+    padding: 10%;
+}
+
+.formationTitle {
+    width: 80%;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.formationTitlePlace {
+    color: #894bdb;
+}
+
+.formationYear {
+    font-size: 13px;
+}
+
+.circle {
+    background-color: #5c00c6;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.experienceDescription {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.columnLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.boxExperience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 170px;
+    background-color: #6722a7;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.boxExperienceRight {
+    margin: 200px 0px 50px 30px;
+}
+
+.boxExperienceLeft {
+    margin: 50px 30px 50px 0px;
+} 
+
+.boxExperienceLeft2 {
+    margin: 150px 30px 50px 0px;
+} 
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.lines {
+    margin-top: 80px;
+}
+
+.lines .line1, .lines .line2, .line2 {
+    width: 150px;
+    height: 5px;
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+
+.line2 {
+    margin-top: 280px;
+}
+
+.lines .line2 {
+    margin-top: 370px;
+}
+
+.column {
+    width: 5px;
+    height: 380px;
+    background-color: #ffffff;
+    margin-top: 130px;
+}
+
+.experienceTitle {
+    font-size: 20px;
+}
+
+.experienceText {
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.experienceYear {
+    font-size: 13px;
+}
+
+.curiosities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.boxCuriosity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.boxCuriosity img {
+    width: 20%;
+    border-radius: 100%;
+}
+
+.curiosityText {
+    width: 60%;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.curiosityTextRight {
+    margin: 0px 200px 50px 0px;
+}
+
+.curiosityTextLeft {
+    margin: 0px 0px 50px 200px;
+}
+
+
+/*-------------------------------------------- My Skills ------------------------------------------------*/
+.mySkills {
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hardSkills, .softSkills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+.boxHardSkill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.hardSkillContainer {
+    width: 300px;
+    height: 50px;
+    background-color: #5c1397; 
+    border-radius: 10px;
+    margin: 5px 10px 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hardSkillBar {
+    width: 250px;
+    height: 2px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.hardSkillCircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #ffffff;
+}
+
+.boxSoftSkill {
+    width: 220px;
+    height: 50px;
+    background: linear-gradient(to right,#007FC6, #4D00AF, #A907AC);
+    border-radius: 10px;
+    margin: 5px 10px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.softSkills {
+    margin-top: 130px;
+    width: 60%;
 }

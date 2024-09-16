@@ -5,6 +5,7 @@
     --black: #160033;
     --white: rgb(238, 227, 227);
     --gradient: linear-gradient(to right,#007FC6, #4D00AF, #A907AC);
+    --shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
   
 * {
@@ -21,11 +22,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 80px;
+  position: fixed;
+  width: 85%;
+  top: 0;
+  box-shadow: var(--shadow);
 }
 
 header, main {
-  margin: 50px 150px 50px 150px;
+  padding: 10px 150px 10px 150px;
 }
 
 h2 {
@@ -38,7 +43,7 @@ h2 {
 nav {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 60%;
   justify-content: space-around;
   font-size: 20px;
 }
@@ -46,4 +51,8 @@ nav {
 a {
   text-decoration: none;
   color: rgb(243, 235, 235);
+}
+
+a:hover {
+  opacity: 0.8;
 }
