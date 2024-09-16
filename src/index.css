@@ -1,3 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 :root {
+    --font: "Ubuntu", sans-serif;;
+    --black: #160033;
+    --white: rgb(238, 227, 227);
+    --gradient: linear-gradient(to right,#007FC6, #4D00AF, #A907AC);
+}
+  
+* {
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--font);
+    letter-spacing: 0.1em;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+header, main {
+  margin: 50px 150px 50px 150px;
+}
+
+h2 {
+  font-size: 30px;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(243, 235, 235);
+}
