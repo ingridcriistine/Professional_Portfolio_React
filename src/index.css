@@ -2,7 +2,7 @@
 
 :root {
     --font: "Ubuntu", sans-serif;;
-    --black: #160033;
+    --bg: #160033;
     --white: rgb(238, 227, 227);
     --gradient: linear-gradient(to right,#007FC6, #4D00AF, #A907AC);
     --shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
@@ -12,10 +12,13 @@
     scroll-behavior: smooth;
     margin: 0px;
     padding: 0;
-    background-color: var(--black);
     color: var(--white);
     font-family: var(--font);
     letter-spacing: 0.1em;
+}
+
+body, header {
+  background-color: var(--bg);
 }
 
 header {

@@ -9,7 +9,7 @@ function App() {
           <nav>
               <a href="#home"><h3>Home</h3></a>
               <a href="#about-me"><h3>About Me</h3></a>
-              <a href="#my-experience"><h3>Experience</h3></a>
+              <a href="#experience"><h3>Experience</h3></a>
               <a href="#my-skills"><h3>My Skills</h3></a>
               <a href="#contact"><h3>Contact</h3></a>
           </nav>
@@ -102,6 +102,45 @@ function App() {
                     <div className={style.boxCuriosity}>
                         <img src="../src/assets/code.jpeg" alt="Ícone"/>
                         <p className={`${style.curiosityText} ${style.curiosityTextLeft}`}>My first contact with programming was during the pandemic, with HTML5, CSS3 and JavaScript. After that, I knew that I wanted to work in the area of Technology.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id='experience'>
+               <div className={style.experience}>
+                    <p className={style.sectionTitle}>EXPERIENCE</p>
+                    <div className={style.experienceImg}>
+                        <img src="" alt=""/>
+                    </div>
+                    <div className={style.experienceDescription}>
+                        <div className={style.columnLeft}>
+                            <div className={`${style.boxExperience} ${style.boxExperienceLeft}`}>
+                                <p className={style.experienceTitle}>ASSISTENT</p>
+                                <p className={style.experienceText}>Salão de Festas</p>
+                                <p className={style.experienceYear}>2018 - 2019</p>
+                            </div>
+                            <div className={`${style.boxExperience} ${style.boxExperienceLeft2}`}>
+                                <p className={style.experienceTitle}>APPRENTICE</p>
+                                <p className={style.experienceText}>Robert Bosch</p>
+                                <p className={style.experienceYear}>2024 - now</p>
+                            </div>
+                        </div>
+
+                        <div className={style.middle}>
+                            <div className={style.lines}>
+                                <div className={style.line1}></div>
+                                <div className={style.line2}></div>
+                            </div>
+                            <div className={style.column}></div>
+                            <div className={style.line2}></div>
+                        </div>
+
+
+                        <div className={`${style.boxExperience} ${style.boxExperienceRight}`}>
+                            <p className={style.experienceTitle}>MACHINE OPERATOR</p>
+                            <p className={style.experienceText}>Empresa Metalúrgica</p>
+                            <p className={style.experienceYear}>2022 - 2023</p>
+                        </div>
                     </div>
                 </div>
             </section>
