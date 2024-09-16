@@ -46,7 +46,7 @@ h2 {
 nav {
   display: flex;
   flex-direction: row;
-  width: 60%;
+  width: 70%;
   justify-content: space-around;
   font-size: 20px;
 }

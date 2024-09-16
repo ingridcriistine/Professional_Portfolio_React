@@ -10,7 +10,8 @@ function App() {
               <a href="#home"><h3>Home</h3></a>
               <a href="#about-me"><h3>About Me</h3></a>
               <a href="#experience"><h3>Experience</h3></a>
-              <a href="#my-skills"><h3>My Skills</h3></a>
+              <a href="#my-skills"><h3>Skills</h3></a>
+              <a href="#projects"><h3>Projects</h3></a>
               <a href="#contact"><h3>Contact</h3></a>
           </nav>
       </header>
@@ -282,6 +283,16 @@ function App() {
                     <div className={style.boxSoftSkill}>
                         <p className={style.softSkillTitle}>Cooperação</p>
                     </div>
+                </div>
+            </section>
+
+            <section id='projects' className={style.projects}>
+                <div className={style}>
+                  <p className={style.littleTitle}>My Projects</p>
+                  <div className={style.boxProject}>
+                    <p className={style.projectTitle}>ASSISTENT</p>
+                    <p className={style.projectText}>Salão de Festas</p>
+                  </div>
                 </div>
             </section>
       </main>
