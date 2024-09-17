@@ -321,35 +321,7 @@ function App() {
                   </div>
                 </div>
             </section>
-
-            <section id="contact" className={style.contact}>
-                <p className={style.littleTitle}>My Projects</p>
-                <p className={style.sectionTitle}>CONTACT</p>
-                <div className={style.contactsContainer}>
-                    <div className={style.boxContacts}>
-                        <div className={style.contactTitle}>
-                            <p className={style.contactText}>E-mail</p>
-                            <p className={style.contactText}>ingridrochacristine@gmail.com</p>
-                        </div>
-                    </div>
-                    <div className={style.boxSocialMedia}>
-                        <p className={style.contactText}>Social Media</p>
-                        <div className={style.contactIcons}>
-                            <a href="https://github.com/ingridcriistine"><img src="../src/assets/icon-github.png" alt="Ícone do GitHub"/></a>
-                            <a href="https://www.linkedin.com/in/ingridcristinerocha/"><img src="../src/assets/icon-linkedin.png" alt="Ícone do Linkedin"/></a>
-                            <a href="https://www.linkedin.com/in/ingridcristinerocha/"><img src="../src/assets/whatsapp.png" alt="Ícone do Linkedin"/></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
       </main>
-
-      <footer>
-            <section className={style.copyright}>
-                <p className={style.copyrightText}>Copyright © 2024 INGRID CRISTINE ROCHA.</p> 
-                <p className={style.copyrightText}>Todos os direitos reservados.</p>
-            </section>
-        </footer>
     </>
   )
 }
