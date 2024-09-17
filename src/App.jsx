@@ -2,7 +2,17 @@ import style from './App.module.css'
 
 function App() {
 
-  return (
+    const handleZap = () => {
+        
+        const defaultPhoneNumber = "5541999999999"
+
+        const urlZAPZAP = `https://api.whatsapp.com/send?phone=${defaultPhoneNumber}&text=Olá, acabei de ver o seu currículo!`
+
+        window.open(urlZAPZAP, '_blank')
+
+    }
+
+    return (
     <>
       <header id="top" className={style.top}>
           <button className={style.iconMenu}><img src='../src/assets/menu.png'></img></button>
@@ -29,9 +39,9 @@ function App() {
 
                 <p className={style.homeMedia}>Follow me</p>
                 <div className={style.homeIcons}>
-                    <a href="https://github.com/ingridcriistine"><img src="../src/assets/icon-github.png" alt="Ícone do GitHub"/></a>
-                    <a href="https://www.linkedin.com/in/ingridcristinerocha/"><img src="../src/assets/icon-linkedin.png" alt="Ícone do Linkedin"/></a>
-                    <a href="https://www.linkedin.com/in/ingridcristinerocha/"><img src="../src/assets/whatsapp.png" alt="Ícone do Linkedin"/></a>
+                    <a target='_blank' href="https://github.com/ingridcriistine"><img src="../src/assets/icon-github.png" alt="Ícone do GitHub"/></a>
+                    <a target='_blank' href="https://www.linkedin.com/in/ingridcristinerocha/"><img src="../src/assets/icon-linkedin.png" alt="Ícone do Linkedin"/></a>
+                    <a onClick={handleZap}><img src="../src/assets/whatsapp.png" alt="Ícone do Linkedin"/></a>
                 </div>
             </div>
 
@@ -301,7 +311,7 @@ function App() {
                         <p className={style.projectText}>Ticket sales system for cinemas in different locations and franchises.</p>   
                         <p className={style.projectLink}><a href='https://github.com/ingridcriistine/Moviefy_Tickets.git'>View project on github</a></p>   
                     </div>
-                    <img src="../src/assets/code.jpeg" alt="Ícone"/>
+                    <iframe src='../src/assets/videoTela2.mp4'></iframe>
                   </div>
                   <div className={style.boxProject}>
                     <div className={style.textos}>
@@ -309,7 +319,7 @@ function App() {
                         <p className={style.projectText}>Simple, intuitive and dynamic system for managing and organizing company data.</p>   
                         <p className={style.projectLink}><a href='https://github.com/JuanoneD/Sistema_Gestao_Empresa.git'>View project on github</a></p>   
                     </div>
-                    <img src="../src/assets/code.jpeg" alt="Ícone"/>
+                    <img src="../src/assets/sge.jpeg" alt="Ícone"/>
                   </div>
                   <div className={style.boxProject}>
                     <div className={style.textos}>
@@ -317,11 +327,39 @@ function App() {
                         <p className={style.projectText}>Database, web and iot integration project to monitor a machine and collect information on its operation to generate a report.</p>   
                         <p className={style.projectLink}><a href='https://github.com/ingridcriistine/Machine_Monitoring.git'>View project on github</a></p>   
                     </div>
-                    <img src="../src/assets/code.jpeg" alt="Ícone"/>
+                    <img src="../src/assets/machine.jpeg" alt="Ícone"/>
                   </div>
                 </div>
             </section>
+
+            <section id="contact" className={style.contact}>
+                <p className={style.littleTitle}>My Projects</p>
+                <p className={style.sectionTitle}>CONTACT</p>
+                <div className={style.contactsContainer}>
+                    <div className={style.boxContacts}>
+                        <div className={style.contactTitle}>
+                            <p className={style.contactText}>E-mail</p>
+                            <p className={style.contactText}>ingridrochacristine@gmail.com</p>
+                        </div>
+                    </div>
+                    <div className={style.boxSocialMedia}>
+                        <p className={style.contactText}>Social Media</p>
+                        <div className={style.contactIcons}>
+                            <a target='_blank' href="https://github.com/ingridcriistine"><img src="../src/assets/icon-github.png" alt="Ícone do GitHub"/></a>
+                            <a target='_blank' href="https://www.linkedin.com/in/ingridcristinerocha/"><img src="../src/assets/icon-linkedin.png" alt="Ícone do Linkedin"/></a>
+                            <a onClick={handleZap}><img src="../src/assets/whatsapp.png" alt="Ícone do Wpp"/></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
       </main>
+
+      <footer>
+            <section className={style.copyright}>
+                <p className={style.copyrightText}>Copyright © 2024 INGRID CRISTINE ROCHA.</p> 
+                <p className={style.copyrightText}>Todos os direitos reservados.</p>
+            </section>
+        </footer>
     </>
   )
 }

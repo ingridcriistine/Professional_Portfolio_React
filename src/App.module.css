@@ -68,7 +68,6 @@ h5 {
 
 .homeTitle {
     width: 52%;
-    text-align: justify;
     line-height: 1.5em;
     font-size: 18px;
 }
@@ -140,7 +139,6 @@ h5 {
 
 .sectionText {
     margin-top: 40px;
-    text-align: justify;
     line-height: 1.5em;
     font-size: 18px;
 }
@@ -178,11 +176,11 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 100%;
 }
 
 .boxFormation img {
-    width: 80%;
+    width: 100%;
     border-radius: 100%;
     padding: 10%;
 }
@@ -205,9 +203,8 @@ h5 {
 }
 
 .circle {
-    background-color: #5c00c6;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 100%;
 }
 
@@ -322,14 +319,13 @@ h5 {
 }
 
 .boxCuriosity img {
-    width: 20%;
+    width: 35%;
     border-radius: 100%;
 }
 
 .curiosityText {
     width: 60%;
-    text-align: justify;
-    line-height: 2.5em;
+    line-height: 25px;
 }
 
 .curiosityTextRight {
@@ -447,6 +443,11 @@ h5 {
     box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 10px;
 }
 
+.boxProject iframe {
+    width: 30%;
+    height: 100%;
+}
+
 .projectTitle {
     font-size: 20px;
 }
@@ -455,7 +456,7 @@ h5 {
     width: 70%;
     text-align: justify;
     margin: 50px 0 50px 0;
-    line-height: 30px;
+    line-height: 23px;
 }
 
 .projectLink {
@@ -508,6 +509,11 @@ h5 {
     align-items: center;
     font-size: 10px;
     line-height: 1.5em;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
 }
 
 
@@ -530,20 +536,138 @@ h3:hover {
 
 /*---------------RESPONSIVIDADE-------------------*/
 /*Celular*/
-@media only screen and (max-width: 499px) {
+@media (width <= 899px) {
     /*HEADER*/
     
 
+    .lines .line1, .lines .line2, .line2, .middle {
+        display: none;
+    }
+
+    .boxExperienceLeft, .boxExperienceLeft2 {
+        margin-left: 150px;  
+        margin-right: 0px;
+    }
+
+    .boxExperienceRight {
+        margin-top: 235px;
+        margin-left: -350px;
+    }
+
+    .home {
+        margin-top: 500px;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .top {
+        justify-content: center;
+        flex-direction: column;
+        height: 200px;
+        gap: 50px;
+    }
+
+    .home {
+        flex-flow: column-reverse;
+        height: 650px;
+    }
+
+    .boxHome, .homeTitle {
+        width: 600px;
+    }
+
+    h5 {
+        width: 100%;
+    }
+
+    .containerFormations {
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+
+    .aboutMe, .mySkills {
+        width: 100%;
+    }
+
+    .boxFormation {
+        width: 80%;
+    }
+
+    .boxCuriosity img {
+        width: 30%;
+        margin: 0;
+    }
+
+    .curiosities {
+        width: 100%;
+        margin: 0;
+    }
     
-}
+    .boxCuriosity img {
+        width: 30%;
+        border-radius: 100%;
+    }
+    
+    .curiosityText {
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .curiosityTextLeft, .curiosityTextRight {
+        margin: 0 80px 0 80px;
+    }
 
-/*Tablet*/
-@media screen and (min-width: 500px) and (max-width: 899px) {
+    .hardSkills {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 80px 0 80px 0;
+    }
 
+    .boxHardSkill {
+        width: 45%;
+    }
+
+    .boxSoftSkill {
+        width: 45%;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    .projects img {
+        width: 30%;
+    }
+
+    .imgsAbout {
+        width: 50%;
+    }
+
+    .imgRight, .imgLeft {
+        margin: 20px 0 20px 0;  
+        width: 45%;
+        border-radius: 100%;
+    }
+
+    .boxAbout {
+        width: 100%;
+    }
+
+    .sectionText {
+        font-size: 20px;
+    }
+
+    .sectionFooter{
+        font-size: 18px;
+    }
+
+    .copyright {
+        width: 100%;
+    }
 }
 
 /*Notebook*/
-@media screen and (min-width: 900px) and (max-width: 1299px) {
+@media (width >= 900px) and (width <=1299px){
     .top {
         justify-content: center;
         flex-direction: column;
@@ -551,19 +675,30 @@ h3:hover {
         gap: 30px;
     }
 
+    h5 {
+        width: 100%;
+    }
+
+    /* .projects {
+        width: 100vh;
+    } */
+
     /* .iconMenu {
         display: block;
     } */
 
     .home {
-        flex-flow: column-reverse;
         margin-top: 350px;
         justify-content: center;
         gap: 80px;
     }
 
-    .boxHome, .perfil {
+    .boxHome, .homeTitle {
         width: 100%;
+    }
+
+    .perfil {
+        width: 50%;
     }
     
     .containerFormations {
@@ -625,8 +760,18 @@ h3:hover {
         width: 100%;
     }
 
-    .lines .line1, .lines .line2, .line2 {
-        width: 20px;
+    .lines .line1, .lines .line2, .line2, .middle {
+        display: none;
+    }
+
+    .boxExperienceLeft, .boxExperienceLeft2 {
+        margin-left: 50px;  
+        margin-right: 0px;
+    }
+
+    .boxExperienceRight {
+        margin-top: 235px;
+        margin-left: -350px;
     }
 
     .imgsAbout {
@@ -651,11 +796,8 @@ h3:hover {
         font-size: 18px;
     }
 
-}
-
-/*Computadores*/
-@media screen and (min-width: 1300px) {
-    body {
-
+    .copyright {
+        width: 100%;
     }
+
 }
