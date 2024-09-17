@@ -1,4 +1,21 @@
 import style from './App.module.css'
+import Github from '../src/assets/icon-github.png'
+import Linkedin from '../src/assets/icon-linkedin.png'
+import Whatsapp from '../src/assets/whatsapp.png'
+import Bosch from '../src/assets/bosch.jpeg'
+import Programming from '../src/assets/programming.jpeg'
+import Work from '../src/assets/work.jpeg'
+import Tads from '../src/assets/tads.jpeg'
+import Perfil from '../src/assets/perfil.png'
+import Ceep from '../src/assets/icon-ceep.jpeg'
+import Ufpr from '../src/assets/icon-ufpr.webp'
+import Senai from '../src/assets/icon-senai.webp'
+import Music from '../src/assets/music.jpeg'
+import Book from '../src/assets/book.jpeg'
+import Code from '../src/assets/code.jpeg'
+import Sge from '../src/assets/sge.jpeg'
+import Machine from '../src/assets/machine.jpeg'
+import VideoTela from '../src/assets/videoTela2.mp4'
 
 function App() {
 
@@ -39,22 +56,22 @@ function App() {
 
                 <p className={style.homeMedia}>Follow me</p>
                 <div className={style.homeIcons}>
-                    <a target='_blank' href="https://github.com/ingridcriistine"><img src="../src/assets/icon-github.png" alt="Ícone do GitHub"/></a>
-                    <a target='_blank' href="https://www.linkedin.com/in/ingridcristinerocha/"><img src="../src/assets/icon-linkedin.png" alt="Ícone do Linkedin"/></a>
-                    <a onClick={handleZap}><img src="../src/assets/whatsapp.png" alt="Ícone do Linkedin"/></a>
+                    <a target='_blank' href="https://github.com/ingridcriistine"><img src={Github} alt="Ícone do GitHub"/></a>
+                    <a target='_blank' href="https://www.linkedin.com/in/ingridcristinerocha/"><img src={Linkedin} alt="Ícone do Linkedin"/></a>
+                    <a onClick={handleZap}><img src={Whatsapp} alt="Ícone do Linkedin"/></a>
                 </div>
             </div>
 
-            <div className={style.perfil}><img src="../src/assets/perfil.png" alt="Foto de perfil"/></div>    
+            <div className={style.perfil}><img src={Perfil} alt="Foto de perfil"/></div>    
         </section>
 
         <section id="about-me" className={style.aboutMe}>
                 <div className={style.whoAmI}>
                     <div className={style.imgsAbout}>
-                        <img src="../src/assets/bosch.jpeg" alt="Imagem" className={style.imgLeft}/>
-                        <img src="../src/assets/programming.jpeg" alt="Imagem" className={style.imgRight}/>
-                        <img src="../src/assets/work.jpeg" alt="Imagem" className={style.imgLeft}/>
-                        <img src="../src/assets/tads.jpeg" alt="Imagem" className={style.imgRight}/>
+                        <img src={Bosch} alt="Imagem" className={style.imgLeft}/>
+                        <img src={Programming} alt="Imagem" className={style.imgRight}/>
+                        <img src={Work} alt="Imagem" className={style.imgLeft}/>
+                        <img src={Tads} alt="Imagem" className={style.imgRight}/>
                     </div>
                     <div className={style.boxAbout}>
                         <p className={style.littleTitle}>About me</p>
@@ -87,17 +104,17 @@ function App() {
                     <p className={style.sectionTitle}>ACADEMIC FORMATIONS</p>
                     <div className={style.containerFormations}>
                         <div className={style.boxFormation}>
-                            <div className={style.circle}><img src="../src/assets/icon-ceep.jpeg" alt="Ícone CEEP"/></div>
+                            <div className={style.circle}><img src={Ceep} alt="Ícone CEEP"/></div>
                             <p className={style.formationTitle}>Technical High School in Eletromechanics | <a href="" className={style.formationTitlePlace}>CEEP</a></p>
                             <p className={style.formationYear}>2020 - 2023</p>
                         </div>
                         <div className={style.boxFormation}>
-                            <div className={style.circle}><img src="../src/assets/icon-ufpr.webp" alt="Ícone UFPR"/></div>
+                            <div className={style.circle}><img src={Ufpr} alt="Ícone UFPR"/></div>
                             <p className={style.formationTitle}>University Degree in Systems Analisys and Development | <a href="" className={style.formationTitlePlace}>UFPR</a></p>
                             <p className={style.formationYear}>2024 - 2026</p>
                         </div>
                         <div className={style.boxFormation}>
-                            <div className={style.circle}><img src="../src/assets/icon-senai.webp" alt="Ícone SENAI"/></div>
+                            <div className={style.circle}><img src={Senai} alt="Ícone SENAI"/></div>
                             <p className={style.formationTitle}>Technical Course in Systems Development | <a href="" className={style.formationTitlePlace}>SENAI</a></p>
                             <p className={style.formationYear}>2024 - 2025</p>
                         </div>
@@ -109,15 +126,15 @@ function App() {
                 <div className={style.curiosities}>
                     <p className={style.sectionTitle}>CURIOSITIES</p>
                     <div className={style.boxCuriosity}>
-                        <img src="../src/assets/music.jpeg" alt="Ícone"/>
+                        <img src={Music} alt="Ícone"/>
                         <p className={`${style.curiosityText} ${style.curiosityTextLeft}`}>I love music! I play guitar, ukulele, keyboard (a little) and I’m currently learning violin by myself. I've had a passion for music since I was a child. My favorite hobby is singing.</p>
                     </div>
                     <div className={style.boxCuriosity}>
                         <p className={`${style.curiosityText} ${style.curiosityTextRight}`}>I read at least fifteen books a year. I really enjoy the peace of reading I book outdoors, in the middle of nature.</p>
-                        <img src="../src/assets/book.jpeg" alt="Ícone"/>
+                        <img src={Book} alt="Ícone"/>
                     </div>
                     <div className={style.boxCuriosity}>
-                        <img src="../src/assets/code.jpeg" alt="Ícone"/>
+                        <img src={Code} alt="Ícone"/>
                         <p className={`${style.curiosityText} ${style.curiosityTextLeft}`}>My first contact with programming was during the pandemic, with HTML5, CSS3 and JavaScript. After that, I knew that I wanted to work in the area of Technology.</p>
                     </div>
                 </div>
@@ -311,7 +328,7 @@ function App() {
                         <p className={style.projectText}>Ticket sales system for cinemas in different locations and franchises.</p>   
                         <p className={style.projectLink}><a href='https://github.com/ingridcriistine/Moviefy_Tickets.git'>View project on github</a></p>   
                     </div>
-                    <iframe src='../src/assets/videoTela2.mp4'></iframe>
+                    <iframe src={VideoTela}></iframe>
                   </div>
                   <div className={style.boxProject}>
                     <div className={style.textos}>
@@ -319,7 +336,7 @@ function App() {
                         <p className={style.projectText}>Simple, intuitive and dynamic system for managing and organizing company data.</p>   
                         <p className={style.projectLink}><a href='https://github.com/JuanoneD/Sistema_Gestao_Empresa.git'>View project on github</a></p>   
                     </div>
-                    <img src="../src/assets/sge.jpeg" alt="Ícone"/>
+                    <img src={Sge} alt="Ícone"/>
                   </div>
                   <div className={style.boxProject}>
                     <div className={style.textos}>
@@ -327,7 +344,7 @@ function App() {
                         <p className={style.projectText}>Database, web and iot integration project to monitor a machine and collect information on its operation to generate a report.</p>   
                         <p className={style.projectLink}><a href='https://github.com/ingridcriistine/Machine_Monitoring.git'>View project on github</a></p>   
                     </div>
-                    <img src="../src/assets/machine.jpeg" alt="Ícone"/>
+                    <img src={Machine} alt="Ícone"/>
                   </div>
                 </div>
             </section>
@@ -345,9 +362,9 @@ function App() {
                     <div className={style.boxSocialMedia}>
                         <p className={style.contactText}>Social Media</p>
                         <div className={style.contactIcons}>
-                            <a target='_blank' href="https://github.com/ingridcriistine"><img src="../src/assets/icon-github.png" alt="Ícone do GitHub"/></a>
-                            <a target='_blank' href="https://www.linkedin.com/in/ingridcristinerocha/"><img src="../src/assets/icon-linkedin.png" alt="Ícone do Linkedin"/></a>
-                            <a onClick={handleZap}><img src="../src/assets/whatsapp.png" alt="Ícone do Wpp"/></a>
+                            <a target='_blank' href="https://github.com/ingridcriistine"><img src={Github} alt="Ícone do GitHub"/></a>
+                            <a target='_blank' href="https://www.linkedin.com/in/ingridcristinerocha/"><img src={Linkedin} alt="Ícone do Linkedin"/></a>
+                            <a onClick={handleZap}><img src={Whatsapp} alt="Ícone do Wpp"/></a>
                         </div>
                     </div>
                 </div>
