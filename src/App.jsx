@@ -4,7 +4,8 @@ function App() {
 
   return (
     <>
-      <header id="top">
+      <header id="top" className={style.top}>
+          <button className={style.iconMenu}><img src='../src/assets/menu.png'></img></button>
           <h2>ICR | Portfolio</h2>
           <nav>
               <a href="#home"><h3>Home</h3></a>
@@ -17,7 +18,7 @@ function App() {
       </header>
 
       <main>
-        <a href="#top"><input type="button" name="btn-cv" id="btn-back" className={style.btnBack} value="^"/></a>
+        <a href="#home"><input type="button" name="btn-cv" id="btn-back" className={style.btnBack} value="^"/></a>
         <section id="home" className={style.home}>
             <div className={style.boxHome}>
                 <h4>Hello, I am</h4>
@@ -30,6 +31,7 @@ function App() {
                 <div className={style.homeIcons}>
                     <a href="https://github.com/ingridcriistine"><img src="../src/assets/icon-github.png" alt="Ícone do GitHub"/></a>
                     <a href="https://www.linkedin.com/in/ingridcristinerocha/"><img src="../src/assets/icon-linkedin.png" alt="Ícone do Linkedin"/></a>
+                    <a href="https://www.linkedin.com/in/ingridcristinerocha/"><img src="../src/assets/whatsapp.png" alt="Ícone do Linkedin"/></a>
                 </div>
             </div>
 
@@ -69,6 +71,8 @@ function App() {
                     </div>
                 </div>
 
+                <hr/>
+
                 <div className={style.academicFormations}>
                     <p className={style.sectionTitle}>ACADEMIC FORMATIONS</p>
                     <div className={style.containerFormations}>
@@ -89,6 +93,8 @@ function App() {
                         </div>
                     </div>
                 </div>
+
+                <hr/>
 
                 <div className={style.curiosities}>
                     <p className={style.sectionTitle}>CURIOSITIES</p>
@@ -287,15 +293,63 @@ function App() {
             </section>
 
             <section id='projects' className={style.projects}>
-                <div className={style}>
+                <div className={style.projectsContainer}>
                   <p className={style.littleTitle}>My Projects</p>
                   <div className={style.boxProject}>
-                    <p className={style.projectTitle}>ASSISTENT</p>
-                    <p className={style.projectText}>Salão de Festas</p>
+                    <div className={style.textos}>
+                        <p className={style.projectTitle}>MOVIEFY TICKETS</p>
+                        <p className={style.projectText}>Ticket sales system for cinemas in different locations and franchises.</p>   
+                        <p className={style.projectLink}><a href='https://github.com/ingridcriistine/Moviefy_Tickets.git'>View project on github</a></p>   
+                    </div>
+                    <img src="../src/assets/code.jpeg" alt="Ícone"/>
+                  </div>
+                  <div className={style.boxProject}>
+                    <div className={style.textos}>
+                        <p className={style.projectTitle}>SISTEMA DE GESTÃO EMPRESARIAL</p>
+                        <p className={style.projectText}>Simple, intuitive and dynamic system for managing and organizing company data.</p>   
+                        <p className={style.projectLink}><a href='https://github.com/JuanoneD/Sistema_Gestao_Empresa.git'>View project on github</a></p>   
+                    </div>
+                    <img src="../src/assets/code.jpeg" alt="Ícone"/>
+                  </div>
+                  <div className={style.boxProject}>
+                    <div className={style.textos}>
+                        <p className={style.projectTitle}>MACHINE MONITORING</p>
+                        <p className={style.projectText}>Database, web and iot integration project to monitor a machine and collect information on its operation to generate a report.</p>   
+                        <p className={style.projectLink}><a href='https://github.com/ingridcriistine/Machine_Monitoring.git'>View project on github</a></p>   
+                    </div>
+                    <img src="../src/assets/code.jpeg" alt="Ícone"/>
                   </div>
                 </div>
             </section>
+
+            <section id="contact" className={style.contact}>
+                <p className={style.littleTitle}>My Projects</p>
+                <p className={style.sectionTitle}>CONTACT</p>
+                <div className={style.contactsContainer}>
+                    <div className={style.boxContacts}>
+                        <div className={style.contactTitle}>
+                            <p className={style.contactText}>E-mail</p>
+                            <p className={style.contactText}>ingridrochacristine@gmail.com</p>
+                        </div>
+                    </div>
+                    <div className={style.boxSocialMedia}>
+                        <p className={style.contactText}>Social Media</p>
+                        <div className={style.contactIcons}>
+                            <a href="https://github.com/ingridcriistine"><img src="../src/assets/icon-github.png" alt="Ícone do GitHub"/></a>
+                            <a href="https://www.linkedin.com/in/ingridcristinerocha/"><img src="../src/assets/icon-linkedin.png" alt="Ícone do Linkedin"/></a>
+                            <a href="https://www.linkedin.com/in/ingridcristinerocha/"><img src="../src/assets/whatsapp.png" alt="Ícone do Linkedin"/></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
       </main>
+
+      <footer>
+            <section className={style.copyright}>
+                <p className={style.copyrightText}>Copyright © 2024 INGRID CRISTINE ROCHA.</p> 
+                <p className={style.copyrightText}>Todos os direitos reservados.</p>
+            </section>
+        </footer>
     </>
   )
 }

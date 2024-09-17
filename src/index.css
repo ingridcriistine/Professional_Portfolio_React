@@ -30,9 +30,6 @@ header {
   width: 85%;
   top: 0;
   box-shadow: var(--shadow);
-}
-
-header, main {
   padding: 10px 150px 10px 150px;
 }
 
@@ -48,7 +45,7 @@ nav {
   flex-direction: row;
   width: 70%;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 a {
@@ -58,4 +55,54 @@ a {
 
 a:hover {
   opacity: 0.8;
+}
+
+hr {
+  width: 100%;
+  margin: 80px 0 50px 0;
+}
+
+footer {
+  background-color: #2a0a55;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+
+/*---------------RESPONSIVIDADE-------------------*/
+/*Celular*/
+@media only screen and (max-width: 499px) {
+  /*HEADER*/
+  
+
+  
+}
+
+/*Tablet*/
+@media screen and (min-width: 500px) and (max-width: 899px) {
+
+}
+
+/*Notebook*/
+@media screen and (min-width: 900px) and (max-width: 1299px) {
+  nav {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+  }
+  header {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*Computadores*/
+@media screen and (min-width: 1300px) {
+  body {
+
+  }
 }

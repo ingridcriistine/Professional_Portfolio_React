@@ -7,16 +7,28 @@
     font-size: 28px;
 }
 
+.iconMenu {
+    display: none;
+    background-color: transparent;
+    border: none;
+    width: 40%;
+}
+
+.iconMenu img {
+    width: 10%;
+}
+
 /*-------------------------------------------- Home ------------------------------------------------*/
 .home {
     display: flex;
     justify-content: space-between;
-    margin-top: 18%;
+    margin-top: 15%;
     height: 60vh;
+    padding: 10px 150px 10px 150px;
 }
 
 .boxHome {
-    width: 50%;
+    width: 90%;
 }
 
 .btnBack {
@@ -68,7 +80,7 @@ h5 {
 .homeIcons img {
     width: 30px;
     height: 30px;
-    padding-right: 10px;
+    padding: 20px 15px 0 0;
 }
 
 .btnCv {
@@ -94,7 +106,9 @@ h5 {
 
 /*-------------------------------------------- About me ------------------------------------------------*/
 .aboutMe {
-    margin-top: 130px;
+    margin-top: 200px;
+    padding: 100px 150px 100px 150px;
+    background-color: rgb(24, 24, 26);
 }
 
 .whoAmI {
@@ -150,13 +164,14 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 80px;
+    margin-bottom: 100px;
 }
 
 .containerFormations {
     display: flex;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .boxFormation {
@@ -178,6 +193,7 @@ h5 {
     line-height: 1.5em;
     font-size: 18px;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .formationTitlePlace {
@@ -200,7 +216,7 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .experienceDescription {
@@ -226,6 +242,7 @@ h5 {
     background-color: #6722a7;
     margin: 50px;
     border-radius: 10px;
+    gap: 20px;
 }
 
 .boxExperienceRight {
@@ -290,9 +307,10 @@ h5 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 250px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-top: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
 }
 
 .boxCuriosity {
@@ -311,7 +329,7 @@ h5 {
 .curiosityText {
     width: 60%;
     text-align: justify;
-    line-height: 1.5em;
+    line-height: 2.5em;
 }
 
 .curiosityTextRight {
@@ -325,11 +343,13 @@ h5 {
 
 /*-------------------------------------------- My Skills ------------------------------------------------*/
 .mySkills {
-    margin-top: 130px;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 100px 150px 100px 150px;
+    border-top: 25px solid rgb(24, 24, 26);
 }
 
 .hardSkills, .softSkills {
@@ -337,6 +357,12 @@ h5 {
     flex-flow: row wrap;
     justify-content: space-between;
     margin: 100px;
+}
+
+.softSkills {
+    margin-top: 130px;
+    width: 80%;
+    justify-content: center;
 }
 
 .boxHardSkill {
@@ -348,7 +374,7 @@ h5 {
 }
 
 .hardSkillContainer {
-    width: 300px;
+    width: 100%;
     height: 50px;
     background-color: #5c1397; 
     border-radius: 10px;
@@ -359,7 +385,7 @@ h5 {
 }
 
 .hardSkillBar {
-    width: 250px;
+    width: 70%;
     height: 2px;
     background-color: white;
     border-radius: 20px;
@@ -377,21 +403,259 @@ h5 {
     height: 50px;
     background: linear-gradient(to right,#007FC6, #4D00AF, #A907AC);
     border-radius: 10px;
-    margin: 5px 10px 20px 0px;
+    margin: 5px 15px 20px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.softSkills {
-    margin-top: 130px;
-    width: 60%;
-}
 
 /*-------------------------------------------- Projects ------------------------------------------------*/
+.projects {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 60px;
+    background-color: rgb(24, 24, 26);
+    padding: 100px 0px 100px 0px;
+}
+
+.projectsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .boxProject {
-    width: 80%;
-    background-color:#6722a7;
-    height: 300px;
+    margin-top: 50px;
+    width: 70%;
+    border: 2px solid #6722a7;
+    height: 280px;
     border-radius: 10px;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 10px;
+}
+
+.boxProject img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 10px;
+}
+
+.projectTitle {
+    font-size: 20px;
+}
+
+.projectText {
+    width: 70%;
+    text-align: justify;
+    margin: 50px 0 50px 0;
+    line-height: 30px;
+}
+
+.projectLink {
+    background: linear-gradient(to right,#007FC6, #4D00AF, #A907AC);
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 35px;
+    margin-top: 80px;
+}
+
+/*-------------------------------------------- Contact ------------------------------------------------*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 80px 0 100px 0;
+}
+
+.contactsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.contactText {
+    margin-bottom: 30px;
+}
+
+.boxContacts, .boxSocialMedia {
+    margin: 100px;
+}
+
+.contactIcons img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+
+/*-------------------------------------------- Footer ------------------------------------------------*/
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    line-height: 1.5em;
+}
+
+
+/*-------------------------------------------- Interactions------------------------------------------------*/
+h3:hover {
+    color: #894bdb;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.homeIcons img:hover, .contactIcons img:hover {
+    cursor: pointer;
+}
+
+#btnCv:hover, .circle img:hover, .boxHardSkill:hover, .hardSkillContainer:hover, .boxSoftSkill:hover, .contactText:hover {
+    color: #918a99;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+/*---------------RESPONSIVIDADE-------------------*/
+/*Celular*/
+@media only screen and (max-width: 499px) {
+    /*HEADER*/
+    
+
+    
+}
+
+/*Tablet*/
+@media screen and (min-width: 500px) and (max-width: 899px) {
+
+}
+
+/*Notebook*/
+@media screen and (min-width: 900px) and (max-width: 1299px) {
+    .top {
+        justify-content: center;
+        flex-direction: column;
+        height: 150px;
+        gap: 30px;
+    }
+
+    /* .iconMenu {
+        display: block;
+    } */
+
+    .home {
+        flex-flow: column-reverse;
+        margin-top: 350px;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .boxHome, .perfil {
+        width: 100%;
+    }
+    
+    .containerFormations {
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+
+    .aboutMe, .mySkills {
+        width: 75%;
+    }
+
+    .boxFormation {
+        width: 80%;
+    }
+
+    .boxCuriosity img {
+        width: 30%;
+        margin: 0;
+    }
+
+    .curiosities {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .boxCuriosity img {
+        width: 30%;
+        border-radius: 100%;
+    }
+    
+    .curiosityText {
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .curiosityTextLeft, .curiosityTextRight {
+        margin: 0 80px 0 80px;
+    }
+
+    .hardSkills {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 80px 0 80px 0;
+    }
+
+    .boxHardSkill {
+        width: 45%;
+    }
+
+    .boxSoftSkill {
+        width: 45%;
+    }
+
+    .projects img {
+        width: 30%;
+    }
+
+    .contactsContainer {
+        width: 100%;
+    }
+
+    .lines .line1, .lines .line2, .line2 {
+        width: 20px;
+    }
+
+    .imgsAbout {
+        width: 50%;
+    }
+
+    .imgRight, .imgLeft {
+        margin: 20px 0 20px 0;  
+        width: 45%;
+        border-radius: 100%;
+    }
+
+    .boxAbout {
+        width: 100%;
+    }
+
+    .sectionText {
+        font-size: 20px;
+    }
+
+    .sectionFooter{
+        font-size: 18px;
+    }
+
+}
+
+/*Computadores*/
+@media screen and (min-width: 1300px) {
+    body {
+
+    }
 }
